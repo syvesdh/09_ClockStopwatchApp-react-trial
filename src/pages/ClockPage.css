@@ -1,0 +1,39 @@
+.clock-page {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.clock-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/dino_bg.jpg);
+  background-size: 200px;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+.clock-container {
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
+  width: auto;
+  padding: 10px 10px;
+  /*Gradient Mask To Fade Blur*/
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-composite: exclude;
+}
+.clock {
+  color: aliceblue;
+  font-family: "VT323", Courier, monospace;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+}
