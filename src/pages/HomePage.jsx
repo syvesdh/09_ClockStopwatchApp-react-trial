@@ -21,6 +21,7 @@ function HomePage() {
           }}
           alt="Motivation Image"
         />
+        <q style={{ color: "grey" }}>Quote of the day!</q>
       </div>
     </div>
   );
