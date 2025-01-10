@@ -4,6 +4,7 @@ import "./App.css";
 import ClockPage from "./pages/ClockPage";
 import StopwatchPage from "./pages/StopwatchPage";
 import HomePage from "./pages/HomePage";
+import FirebasePage from "./pages/FirebasePage";
 import { Layout } from "./Layout";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/stopwatch" element={<StopwatchPage />} />
           <Route path="/clock" element={<ClockPage />} />
+          <Route path="/firebase" element={<FirebasePage />} />
         </Route>
       </Routes>
     </Router>

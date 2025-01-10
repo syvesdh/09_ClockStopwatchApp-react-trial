@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Link to="/">
@@ -12,6 +14,13 @@ export function Navbar() {
       <Link to="/clock">
         <button>Clock</button>
       </Link>
+      <button
+        onClick={() => {
+          navigate("/firebase");
+        }}
+      >
+        Firebase-Trial-App
+      </button>
     </>
   );
 }
