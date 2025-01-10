@@ -14,7 +14,7 @@ function JavascriptWrite() {
       questionText: inputQuestionText,
     })
       .then(() => {
-        alert("data saved successfully");
+        window.location.reload();
       })
       .catch(() => {
         alert("error: ", error.message);
