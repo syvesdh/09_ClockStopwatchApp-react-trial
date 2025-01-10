@@ -1,8 +1,11 @@
+import Stopwatch from "../components/Stopwatch";
+import "./StopwatchPage.css";
+
 function StopwatchPage() {
   return (
-    <>
-      <h1>Stopwatch Page</h1>
-    </>
+    <div className="stopwatch-page">
+      <Stopwatch />
+    </div>
   );
 }
 
